@@ -1,0 +1,198 @@
+@import "~antd/dist/antd.css";
+/* 
+COLORS
+
+#38ef7d -> Light Green
+#31C189 -> Mid Green
+#11998e -> Dark Green
+#FFC371 -> Light Red / Orange 
+#FD8F74 -> Mid Red 
+#FF5F6D -> Dark Red
+#00B4DB -> Light Blue 
+#189CC3 -> Mid Blue
+#0083B0 -> Dark Blue
+#3a3a3a -> Dark Grey
+*/
+
+/* 
+ __  __       _       
+|  \/  |     (_)      
+| \  / | __ _ _ _ __  
+| |\/| |/ _` | | '_ \ 
+| |  | | (_| | | | | |
+|_|  |_|\__,_|_|_| |_| */
+
+/* FOUC issue */
+#react-app.fouc {
+  visibility: hidden;
+}
+
+.btn-water-custom {
+  color: #fff !important;
+  background-color: #00b4db !important;
+  border-color: #00b4db !important;
+}
+.btn-water-custom:hover {
+  color: #fff !important;
+  background-color: #019cbe !important;
+  border-color: #019cbe !important;
+}
+
+.anticon {
+  vertical-align: 0 !important;
+}
+
+/*
+ _                   _____       
+| |                 |_   _|      
+| |     ___   __ _    | |  _ __  
+| |    / _ \ / _` |   | | | '_ \ 
+| |___| (_) | (_| |  _| |_| | | |
+|______\___/ \__, | |_____|_| |_|
+              __/ |              
+             |___/                */
+
+/* Login Section */
+
+.signup_container {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  left: 0;
+  margin-right: auto;
+  margin-left: auto;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50rem;
+  height: 30rem;
+  border-radius: 0.1875rem;
+  box-shadow: 21px 21px 4.4375rem rgba(0, 0, 0, 0.38);
+}
+
+.container__child {
+  width: 50%;
+  height: 100%;
+  color: #fff;
+}
+
+.signup__thumbnail {
+  position: relative;
+  padding: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  background: url(https://images.pexels.com/photos/863988/pexels-photo-863988.jpeg?cs=srgb&dl=action-athlete-blue-863988.jpg&fm=jpg);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+  z-index: 100;
+}
+
+.logo,
+.thumbnail__content {
+  position: relative;
+  z-index: 2;
+}
+
+.logo {
+  align-self: flex-start;
+}
+
+.signup__thumbnail h1,
+.signup__thumbnail h2 {
+  font-weight: 300;
+  color: white;
+}
+.signup_form {
+  padding: 2.5rem;
+  background: #fafafa;
+}
+
+label {
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+label.field-empty.field-required:before {
+  opacity: 1;
+}
+
+label {
+  position: relative;
+  clear: left;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+label input,
+label select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  order: 2;
+  margin: 10px 0 0 0;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-width: 0 0 1px 0;
+  border-radius: 0;
+  background: rgba(0, 0, 0, 0);
+  height: 1.8em;
+  font: inherit;
+  color: inherit;
+  padding: 0;
+  outline: none;
+  transition: all 180ms;
+  width: 100%;
+  font-size: 16px;
+}
+label input::-webkit-input-placeholder {
+  color: rgba(0, 0, 0, 0.35);
+  font-weight: 300;
+}
+label input::-moz-placeholder {
+  color: rgba(0, 0, 0, 0.35);
+  font-weight: 300;
+  opacity: 1;
+}
+label input::-ms-input-placeholder {
+  color: rgba(0, 0, 0, 0.35);
+  font-weight: 300;
+}
+label input:hover {
+  border-color: rgba(0, 0, 0, 0.35);
+}
+label input:focus {
+  border-color: #222;
+}
+.invalidInput {
+  border-color: red;
+}
+.invalidFeedback {
+  width: 100%;
+  font-size: 60%;
+  color: #dc3545;
+}
+.transform-login-max {
+  transition-timing-function: ease-in;
+  transition: 1s;
+  transform: translateX(100%);
+}
+.transform-login-min {
+  transition-timing-function: ease-in;
+  transition: 1s;
+  transform: translateX(0%);
+}
+
+input[type="date"]:before {
+  content: attr(placeholder) !important;
+  color: #aaa;
+  margin-right: 0.5em;
+}
+input[type="date"]:focus:before,
+input[type="date"]:valid:before {
+  content: "";
+}
