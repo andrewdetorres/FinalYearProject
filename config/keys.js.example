@@ -1,0 +1,5 @@
+module.exports = {
+  mongoURI:
+    "[MONGO_URI]",
+  secretKey: "SECRET_KEY"
+};
